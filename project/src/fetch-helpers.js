@@ -18,8 +18,10 @@ export const getRandomPokemon = async () => {
 
     pokemonObj.name = responseData.name
 
+    pokemonObj.types = []
+
     responseData.types.forEach(obj => {{
-        pokemonObj.types = obj.type.name
+        pokemonObj.types.push(obj.type.name)
     }}
     )
 

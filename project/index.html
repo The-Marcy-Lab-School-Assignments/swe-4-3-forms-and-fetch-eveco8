@@ -7,10 +7,34 @@
     <title>project</title>
   </head>
   <body>
+
+    <form action="https://formspree.io/f/mkovbbpy" method="POST" id="contact-form">
+      <h2>Capture Pokemon</h2>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      
+      <div>
+        <label for="types">Types</label>
+        <input type="text" name="types" id="types" required>
+      </div>
+
+      <div>
+        <label for="favorite">Favorite</label>
+        <input type="checkbox" name="favorite" id="favorite">
+      </div>
+
+      <div>
+        <button type="submit">Capture</button>
+      </div>
+    </form>
+
     <div id="app">
           <p id="error"></p>
           <p id="success"></p>
-          <button type="button" id="discover-button"></button>
+          <h2>Discovered Pokemon</h2>
+          <button type="button" id="discover-button">Find New Pokemon</button>
           <ul id="discovered-list"></ul>
     </div>
     <script type="module" src="/src/main.js"></script>
